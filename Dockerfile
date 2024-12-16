@@ -1,38 +1,30 @@
 # Stage 1: Build the React app
 FROM node:18-alpine AS builder
 
-# Set working directory
 WORKDIR /app
 
-# Copy the package.json and package-lock.json from the frontend directory
-COPY frontend/package*.json ./frontend/
-
-# Change into the frontend directory
-WORKDIR /app/frontend
+# Copy frontend files
+COPY frontend/ .
 
 # Install dependencies
 RUN npm install --legacy-peer-deps
 
-# Copy the rest of the frontend source code
-COPY frontend/ ./
-
 # Build the application
 RUN npm run build
 
-# Stage 2: Serve the app using a static server
+# Stage 2: Serve the app
 FROM node:18-alpine
 
-# Install 'serve' to serve static files
-RUN npm install -g serve
-
-# Set working directory
 WORKDIR /app
 
-# Copy the build output from the builder stage
-COPY --from=builder /app/frontend/dist ./dist
+# Install serve
+RUN npm install -g serve
 
-# Expose the port used by the static server
+# Copy only the built files from builder
+COPY --from=builder /app/dist ./dist
+
+# Expose port
 EXPOSE 3000
 
-# Serve the application
+# Start the app
 CMD ["serve", "-s", "dist", "-l", "3000"]
