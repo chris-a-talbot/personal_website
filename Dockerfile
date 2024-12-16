@@ -17,14 +17,14 @@ FROM node:18-alpine
 
 WORKDIR /app
 
-# Install serve
-RUN npm install -g serve
-
 # Copy only the built files from builder
 COPY --from=builder /app/dist ./dist
+
+# Use node to install serve globally
+RUN npm install -g serve@latest
 
 # Expose port
 EXPOSE 3000
 
-# Start the app
-CMD ["serve", "-s", "dist", "-l", "3000"]
+# Start the app with explicit serve command
+CMD serve -s dist -l 3000 --no-clipboard --no-request-logging
