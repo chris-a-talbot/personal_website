@@ -1,7 +1,6 @@
 # Stage 1: Build the React app
 FROM node:18-alpine AS builder
 
-# Set working directory to match your project structure
 WORKDIR /app/frontend
 
 # Copy only the package.json and package-lock.json first for efficient caching
@@ -23,7 +22,7 @@ FROM node:18-alpine
 RUN npm install -g serve
 
 # Set working directory for the runtime
-WORKDIR /app
+WORKDIR /app/frontend  
 
 # Copy the build output from the previous stage
 COPY --from=builder /app/frontend/dist ./dist
