@@ -11,34 +11,40 @@ interface TimelineEvent {
 
 const events: TimelineEvent[] = [
     {
-        year: 2024,
-        title: "Lab Technician at Bradburd Lab",
-        description: "Developing and implementing cutting-edge population genomic techniques to study geographic patterns in human ancestry.",
-        tags: ["Genomics", "Population Genetics", "Computational Biology"]
-    },
-    {
-        year: 2024,
-        title: "Research on Floral Color Patterns",
-        description: "Led research combining citizen science data with computational methods to understand patterns of floral color in Northeast American wildflowers.",
-        tags: ["Evolutionary Biology", "Citizen Science", "Data Analysis"]
-    },
-    {
-        year: 2023,
-        title: "Environmental Education & Outreach",
-        description: "Began role as docent at Matthaei Botanical Gardens, combining scientific expertise with public education to promote environmental awareness.",
-        tags: ["Education", "Conservation", "Community Engagement"]
-    },
-    {
-        year: 2022,
-        title: "CRISPR-Cas9 Research",
-        description: "Contributed to genetic modification research in poison dart frogs, expanding toolkit for studying evolutionary processes.",
-        tags: ["Molecular Biology", "Genetics", "Lab Research"]
+        year: 2020,
+        title: "Associates Degree Achievement",
+        description: "Graduated from Grand Rapids Community College with an Associates of General Studies, focusing on Computer Science & Mathematics with a 3.9 GPA.",
+        tags: ["Education", "Computer Science", "Mathematics"]
     },
     {
         year: 2021,
-        title: "Started Environmental Advocacy",
-        description: "Co-founded Students for Public Power @UM, advocating for sustainable energy solutions and environmental policy change.",
-        tags: ["Advocacy", "Sustainability", "Leadership"]
+        title: "Started Research Career",
+        description: "Joined the Márquez Lab at UMich, beginning work on optimizing CRISPR-Cas9 genetic modification in Phyllobates poison-dart frogs.",
+        tags: ["Molecular Biology", "Genetics", "Lab Research"]
+    },
+    {
+        year: 2022,
+        title: "Advanced to Weber Lab",
+        description: "Began research on patterns of floral color in Northeast American wildflower communities, combining computational methods with citizen science data.",
+        tags: ["Evolutionary Biology", "Data Analysis", "Citizen Science"]
+    },
+    {
+        year: 2023,
+        title: "Environmental Leadership",
+        description: "Co-founded Students for Public Power @UM and started as a docent at Matthaei Botanical Gardens, expanding impact through education and advocacy.",
+        tags: ["Leadership", "Education", "Environmental Advocacy"]
+    },
+    {
+        year: 2024,
+        title: "Graduation & Professional Advancement",
+        description: "Graduated with Highest Honors in Ecology, Evolution, and Biodiversity from UMich. Began position at Bradburd Lab working on geographic evolutionary inference methods.",
+        tags: ["Academic Achievement", "Career Advancement", "Computational Biology"]
+    },
+    {
+        year: 2024,
+        title: "Research Publications & Presentations",
+        description: "Presented research at Evolution 2024 and Botany 2024 conferences, while preparing publication on floral color patterns using citizen science data.",
+        tags: ["Research", "Publications", "Academic Presentations"]
     }
 ];
 
