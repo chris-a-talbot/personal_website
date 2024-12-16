@@ -38,12 +38,12 @@ const Navigation = () => {
                             <a href="https://your-substack-url.substack.com" target="_blank" rel="noopener noreferrer">
                                 <Button variant="ghost">Blog</Button>
                             </a>
-                            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/chris-a-talbot" target="_blank" rel="noopener noreferrer">
                                 <Button size="icon" variant="ghost">
                                     <Github className="h-5 w-5" />
                                 </Button>
                             </a>
-                            <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
+                            <a href="https://twitter.com/chris__talbot" target="_blank" rel="noopener noreferrer">
                                 <Button size="icon" variant="ghost">
                                     <Twitter className="h-5 w-5" />
                                 </Button>

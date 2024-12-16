@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
 import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
 import Timeline from '@/components/timeline/Timeline';
@@ -36,7 +37,7 @@ const Home = () => {
                                 Chris Talbot
                             </h1>
                             <p className="text-2xl text-muted-foreground animate-in fade-in slide-in-from-bottom-4 duration-700">
-                                Bioinformatician
+                                Computational Biologist & Environmental Scientist
                             </p>
                         </div>
                         <div className="flex flex-wrap justify-center gap-4 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">
@@ -60,38 +61,51 @@ const Home = () => {
 
                     <section className="h-screen">
                         <div className="max-w-6xl mx-auto h-full flex items-center">
-                            <p className="text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 leading-relaxed tracking-wide ml-20 max-w-xl animate-in fade-in slide-in-from-left-4 duration-700">
-                                Decoding nature's blueprints to address our planet's most pressing challenges
-                            </p>
+                            <Card className="ml-20 max-w-xl animate-in fade-in slide-in-from-left-4 duration-700 bg-black/70 backdrop-blur-sm border-blue-500/20 hover:border-purple-500/30 transition-colors">
+                                <CardContent className="p-8 relative overflow-hidden">
+                                    <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10" />
+                                    <p className="relative text-3xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 leading-relaxed tracking-wide">
+                                        Leveraging computational innovation to understand and protect our changing planet
+                                    </p>
+                                </CardContent>
+                            </Card>
                         </div>
                     </section>
 
                     <section className="h-screen">
                         <div className="max-w-6xl mx-auto h-full flex items-center justify-end">
-                            <p className="text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 leading-relaxed tracking-wide mr-20 max-w-xl animate-in fade-in slide-in-from-right-4 duration-700">
-                                Bridging the gap between DNA and ecosystems to pioneer solutions for global environmental change
-                            </p>
+                            <Card className="mr-20 max-w-xl animate-in fade-in slide-in-from-right-4 duration-700 bg-black/70 backdrop-blur-sm border-blue-500/20 hover:border-purple-500/30 transition-colors">
+                                <CardContent className="p-8 relative overflow-hidden">
+                                    <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10" />
+                                    <p className="relative text-3xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 leading-relaxed tracking-wide">
+                                        Building the next generation of tools for conservation science and environmental research
+                                    </p>
+                                </CardContent>
+                            </Card>
                         </div>
                     </section>
 
                     <section className="h-screen">
                         <div className="max-w-6xl mx-auto h-full flex items-center">
-                            <div className="ml-20 max-w-xl space-y-8 animate-in fade-in slide-in-from-left-4 duration-700">
-                                <h2 className="text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 tracking-tight">
-                                    About Me
-                                </h2>
-                                <div className="space-y-6 text-xl text-muted-foreground leading-relaxed">
-                                    <p className="animate-in fade-in slide-in-from-left-4 duration-700 delay-100">
-                                        I'm a researcher and technologist working at the intersection of molecular biology and environmental science.
-                                    </p>
-                                    <p className="animate-in fade-in slide-in-from-left-4 duration-700 delay-200">
-                                        My work combines advanced genomics with ecosystem modeling to understand and address global environmental challenges.
-                                    </p>
-                                    <p className="animate-in fade-in slide-in-from-left-4 duration-700 delay-300">
-                                        Through computational innovation, I aim to transform our understanding of natural systems and develop sustainable solutions for our changing world.
-                                    </p>
-                                </div>
-                            </div>
+                            <Card className="ml-20 max-w-xl animate-in fade-in slide-in-from-left-4 duration-700 bg-black/70 backdrop-blur-sm border-blue-500/20 hover:border-purple-500/30 transition-colors">
+                                <CardContent className="p-8 relative overflow-hidden">
+                                    <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10" />
+                                    <h2 className="relative text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 tracking-tight mb-8">
+                                        About Me
+                                    </h2>
+                                    <div className="relative space-y-6 text-xl text-blue-100 leading-relaxed">
+                                        <p className="animate-in fade-in slide-in-from-left-4 duration-700 delay-100">
+                                            I'm a computational biologist and environmental scientist working at the intersection of genomics, ecology, and global change.
+                                        </p>
+                                        <p className="animate-in fade-in slide-in-from-left-4 duration-700 delay-200">
+                                            My research combines cutting-edge computational methods with evolutionary biology to understand how species and ecosystems respond to environmental change.
+                                        </p>
+                                        <p className="animate-in fade-in slide-in-from-left-4 duration-700 delay-300">
+                                            Through innovative technology and community engagement, I'm committed to developing sustainable solutions for our planet's most pressing environmental challenges.
+                                        </p>
+                                    </div>
+                                </CardContent>
+                            </Card>
                         </div>
                     </section>
                 </div>

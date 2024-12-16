@@ -11,28 +11,34 @@ interface TimelineEvent {
 
 const events: TimelineEvent[] = [
     {
-        year: 2018,
-        title: "Started Research in Evolutionary Biology",
-        description: "Began exploring computational approaches to understanding evolutionary processes.",
-        tags: ["Research", "Computational Biology"]
-    },
-    {
-        year: 2020,
-        title: "Published First Paper on Digital Evolution",
-        description: "Investigated emergence of complex behaviors in artificial life systems.",
-        tags: ["Publication", "Digital Evolution"]
-    },
-    {
-        year: 2022,
-        title: "Launched Open Source Biology Tools",
-        description: "Created and released tools for visualizing evolutionary data.",
-        tags: ["Open Source", "Data Visualization"]
+        year: 2024,
+        title: "Lab Technician at Bradburd Lab",
+        description: "Developing and implementing cutting-edge population genomic techniques to study geographic patterns in human ancestry.",
+        tags: ["Genomics", "Population Genetics", "Computational Biology"]
     },
     {
         year: 2024,
-        title: "Current Research",
-        description: "Exploring the intersection of artificial life and machine learning.",
-        tags: ["AI", "Research"]
+        title: "Research on Floral Color Patterns",
+        description: "Led research combining citizen science data with computational methods to understand patterns of floral color in Northeast American wildflowers.",
+        tags: ["Evolutionary Biology", "Citizen Science", "Data Analysis"]
+    },
+    {
+        year: 2023,
+        title: "Environmental Education & Outreach",
+        description: "Began role as docent at Matthaei Botanical Gardens, combining scientific expertise with public education to promote environmental awareness.",
+        tags: ["Education", "Conservation", "Community Engagement"]
+    },
+    {
+        year: 2022,
+        title: "CRISPR-Cas9 Research",
+        description: "Contributed to genetic modification research in poison dart frogs, expanding toolkit for studying evolutionary processes.",
+        tags: ["Molecular Biology", "Genetics", "Lab Research"]
+    },
+    {
+        year: 2021,
+        title: "Started Environmental Advocacy",
+        description: "Co-founded Students for Public Power @UM, advocating for sustainable energy solutions and environmental policy change.",
+        tags: ["Advocacy", "Sustainability", "Leadership"]
     }
 ];
 
@@ -46,14 +52,12 @@ const Timeline = () => {
     return (
         <div ref={ref} className="py-20">
             <h2 className="text-4xl font-bold text-center mb-16 text-gradient">
-                Research Timeline
+                Research & Impact Timeline
             </h2>
 
             <div className="relative max-w-4xl mx-auto px-4" ref={timelineRef}>
-                {/* Timeline line */}
                 <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500" />
 
-                {/* Timeline events */}
                 <div className="space-y-16">
                     {events.map((event, index) => (
                         <div
@@ -62,10 +66,8 @@ const Timeline = () => {
                                 index % 2 === 0 ? 'md:flex-row-reverse' : ''
                             }`}
                         >
-                            {/* Year marker */}
                             <div className="absolute left-3 md:left-1/2 -translate-x-1/2 w-3 h-3 bg-primary rounded-full shadow-lg shadow-primary/50" />
 
-                            {/* Content card */}
                             <Card
                                 className={`w-full md:w-[calc(50%-2rem)] ${
                                     inView ? 'animate-in fade-in slide-in-from-bottom-4 duration-700 fill-mode-both' : ''
@@ -85,8 +87,8 @@ const Timeline = () => {
                                                     key={tag}
                                                     className="px-2 py-1 text-xs rounded-full bg-primary/10 text-primary"
                                                 >
-                          {tag}
-                        </span>
+                                                    {tag}
+                                                </span>
                                             ))}
                                         </div>
                                     )}

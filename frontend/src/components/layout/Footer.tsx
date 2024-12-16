@@ -9,12 +9,12 @@ const Footer = () => {
                     <h2 className="text-2xl font-semibold text-gradient">Get in Touch</h2>
 
                     <div className="flex space-x-4">
-                        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/chris-a-talbot" target="_blank" rel="noopener noreferrer">
                             <Button size="icon" variant="outline">
                                 <Github className="h-5 w-5" />
                             </Button>
                         </a>
-                        <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
+                        <a href="https://twitter.com/chris__talbot" target="_blank" rel="noopener noreferrer">
                             <Button size="icon" variant="outline">
                                 <Twitter className="h-5 w-5" />
                             </Button>
