@@ -12,38 +12,38 @@ interface TimelineEvent {
 const events: TimelineEvent[] = [
     {
         year: 2020,
-        title: "Associates Degree Achievement",
-        description: "Graduated from Grand Rapids Community College with an Associates of General Studies, focusing on Computer Science & Mathematics with a 3.9 GPA.",
+        title: "Associates Degree Completed",
+        description: "Graduated from Grand Rapids Community College with an Associates in Pre-Computer Science with projects in C++, web development, database design, and info security.",
         tags: ["Education", "Computer Science", "Mathematics"]
     },
     {
         year: 2021,
         title: "Started Research Career",
-        description: "Joined the Márquez Lab at UMich, beginning work on optimizing CRISPR-Cas9 genetic modification in Phyllobates poison-dart frogs.",
+        description: "Joined the Márquez Lab at UMich, beginning work on optimizing CRISPR-Cas9 genetic modification techniques in poison-dart frogs.",
         tags: ["Molecular Biology", "Genetics", "Lab Research"]
     },
     {
         year: 2022,
-        title: "Advanced to Weber Lab",
-        description: "Began research on patterns of floral color in Northeast American wildflower communities, combining computational methods with citizen science data.",
+        title: "Began Independent Research",
+        description: "Began research on wildflower community composition, combining computational methods, citizen science data, and advanced statistical analysis",
         tags: ["Evolutionary Biology", "Data Analysis", "Citizen Science"]
     },
     {
         year: 2023,
-        title: "Environmental Leadership",
-        description: "Co-founded Students for Public Power @UM and started as a docent at Matthaei Botanical Gardens, expanding impact through education and advocacy.",
+        title: "Pursued Environmental Leadership",
+        description: "Co-founded Students for Public Power @UM, started as a docent at Matthaei Botanical Gardens, and began working as a Science Olympiad test writer, expanding impact through education and advocacy.",
         tags: ["Leadership", "Education", "Environmental Advocacy"]
     },
     {
         year: 2024,
         title: "Graduation & Professional Advancement",
-        description: "Graduated with Highest Honors in Ecology, Evolution, and Biodiversity from UMich. Began position at Bradburd Lab working on geographic evolutionary inference methods.",
+        description: "Graduated with Highest Honors in Ecology, Evolution, and Biodiversity from UMich. Began position at Bradburd Lab working on geographic evolutionary inference methods using Python and Rust.",
         tags: ["Academic Achievement", "Career Advancement", "Computational Biology"]
     },
     {
         year: 2024,
         title: "Research Publications & Presentations",
-        description: "Presented research at Evolution 2024 and Botany 2024 conferences, while preparing publication on floral color patterns using citizen science data.",
+        description: "Presented research at Evolution and Botany 2024 conferences, while preparing publications on novel methods for studying community composition and evolutionary history.",
         tags: ["Research", "Publications", "Academic Presentations"]
     }
 ];
